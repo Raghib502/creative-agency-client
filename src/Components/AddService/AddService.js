@@ -8,9 +8,6 @@ const AddService = () => {
 
         <SideBar></SideBar>
         
-            
-        
-
         <div style={{ height: '100vh', width: '80%',background: '#E5E5E5' }}>
         <h2 className="pt-5 ml-5 mt-2 mb-5 " >Add Service</h2>
             <Form className='form'>

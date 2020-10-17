@@ -10,15 +10,15 @@ const SideBar = () => {
 
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
       
-    const [isAdmin, setIsAdmin] = useState(false);
+    const [admin, setAdmin] = useState(false);
 
-    useEffect(() => {
-        fetch("https://damp-tundra-32037.herokuapp.com/getAdmin")
-          .then((res) => res.json())
-          .then((data) => {
-            setIsAdmin(data);
-          });
-      }, []);
+    // useEffect(() => {
+    //     fetch("https://damp-tundra-32037.herokuapp.com/getAdmin")
+    //       .then((res) => res.json())
+    //       .then((data) => {
+    //         setAdmin(data);
+    //       });
+    //   }, []);
     
            
 
@@ -47,6 +47,7 @@ const SideBar = () => {
             </div>
            
          
+         
             <div>
                 <li>
                 <Link to="/dashboard" className="text-dark ml-4">
@@ -64,7 +65,6 @@ const SideBar = () => {
                 </Link>
             </li>
             </div>
-
         </ul>
             
         
