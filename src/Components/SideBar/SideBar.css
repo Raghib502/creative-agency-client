@@ -1,0 +1,14 @@
+.sidebar{
+    /* background-image: linear-gradient(40deg, #eef5f4,#e6edee); */
+    
+}
+.sidebar li{
+    margin-bottom: 2em;
+}
+.sidebar li:hover span{
+    color: #009444;
+    text-decoration: none;
+}
+.sidebar svg{
+    margin-right: 5px;
+}

@@ -1,0 +1,15 @@
+.col-md-4 h1{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+}
+.col-md-4 p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+.btn{
+    padding:5px 30px;
+}
