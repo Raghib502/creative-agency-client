@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Dropdown, Table } from 'react-bootstrap';
+import { Button, Dropdown, Table } from 'react-bootstrap';
 import { UserContext } from '../../App';
 import SideBar from '../SideBar/SideBar';
 
@@ -9,13 +9,13 @@ const AllOrder = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     console.log(service);
     useEffect(() => {
-        fetch('http://localhost:4000/allOrderList')
+        fetch('https://damp-tundra-32037.herokuapp.com/allOrderList')
             .then(res => res.json())
             .then(data => setService(data));
     },[loggedInUser.email])
 
     const deleteEvent = (id) => {
-        fetch('http://localhost:4000/deleteUser/' + id, {
+        fetch('https://damp-tundra-32037.herokuapp.com/deleteUser/' + id, {
             method: 'DELETE'
         })
             .then(res => res.json())
@@ -50,17 +50,7 @@ const AllOrder = () => {
                         <td>{service.service}</td>
                         <td>{service.details}</td>
                         <td>
-                        <Dropdown>
-                            <Dropdown.Toggle onClick={() => deleteEvent(service._id)} id="dropdown-basic">
-                                Dropdown Button
-                            </Dropdown.Toggle>
-
-                            <Dropdown.Menu>
-                                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                            </Dropdown.Menu>
-                            </Dropdown>
+                       <Button onClick={() => deleteEvent(service._id)} className='btn btn-primary'>Done</Button>
                         </td>
                     </tr>
                 </tbody>

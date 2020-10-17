@@ -39,7 +39,7 @@ const Services = () => {
     const [services, setServices] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:4000/allServices')
+        fetch('https://damp-tundra-32037.herokuapp.com/allServices')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])

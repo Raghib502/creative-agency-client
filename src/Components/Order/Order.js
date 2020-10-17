@@ -13,7 +13,7 @@ const Order = () => {
     const { register, handleSubmit, errors } = useForm({});
     const history = useHistory();
     const onSubmit = data => {
-        fetch('http://localhost:4000/addOrder', {
+        fetch('https://damp-tundra-32037.herokuapp.com/addOrder', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)

@@ -8,14 +8,6 @@ import './Partner.css';
 
 const Partner = () => {
     return (
-        // <div className="row image">
-        //     <img src={slack} alt=""/>
-        //     <img src={google} alt=""/>
-        //     <img src={uber} alt=""/>
-        //     <img src={netflix} alt=""/>
-        //     <img src={airbnb} alt=""/>
-            
-        // </div>
         <ul class="nav image d-flex justify-content-center partner">
             <li class="nav-item">
                 <img src={slack} alt=""/>

@@ -11,7 +11,7 @@ const Review = () => {
     const { register, handleSubmit, errors } = useForm({});
 
     const onSubmit = data => {
-        fetch('http://localhost:4000/addReview', {
+        fetch('https://damp-tundra-32037.herokuapp.com/addReview', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)
