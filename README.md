@@ -1,3 +1,24 @@
+## Creative Agency
+
+### Overview
++ A full-stack agency or any office management app.
++ User can order or book their work. Like web development, design etc.
++ User can see their status, give their review and order status.
+
+
+### Technology
++ React, React-Router,React Bootstrap, Firebase authentication and hosting,nodejs, heroku, vs code.
+
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
