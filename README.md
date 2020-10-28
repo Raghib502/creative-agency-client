@@ -7,7 +7,7 @@
 
 
 ### Technology
-+ React, React-Router,React Bootstrap, Firebase authentication and hosting,nodejs, heroku, vs code.
++ React, React-Router,React Bootstrap, Firebase authentication and hosting,nodejs,mongodb, heroku, vs code.
 
 
 
